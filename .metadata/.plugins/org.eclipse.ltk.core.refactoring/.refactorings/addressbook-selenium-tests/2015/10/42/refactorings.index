@@ -1,0 +1,11 @@
+1444684186325	Extract method 'openMainPage'
+1444684320008	Extract method 'gotoGroupsPage'
+1444684499598	Extract method 'initNewGroupCreation'
+1444684528963	Extract method 'fillGroupForm'
+1444684555664	Extract method 'submitGroupForm'
+1444685053271	Introduce parameter for 'fillGroupForm'
+1444685093455	Introduce parameter for 'fillGroupForm'
+1444685115277	Introduce parameter for 'fillGroupForm'
+1444685587899	Rename local variable 'name'
+1444685644993	Introduce Parameter Object
+1444685820250	Extract local variable 'group'
