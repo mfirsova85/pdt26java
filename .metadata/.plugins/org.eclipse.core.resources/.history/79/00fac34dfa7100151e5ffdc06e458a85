@@ -29,22 +29,8 @@ public class ContactCreationTest {
   public void testnotemptycontactcreation() throws Exception {
     openMainPage();
 	initNewContactCreation();
-    ContactData contact = new ContactData();
-    contact.firstName = "firstname1";
-    contact.lastName ="lastname1";
-    contact.group ="Rob";
-    contact.bdday = "10";
-    contact.bdmonth ="10";
-    contact.bdyear ="2010";
-    contact.mainAddress ="mainaddress1";
-    contact.mainHome ="mainhome1";
-    contact.mainMail ="mainmail1@test.test";
-    contact.mobile = "0000001";
-    contact.secondaryaddress = "secondaryaddress1";
-    contact.secondaryhome = "secondaryhome1";
-    contact.secondaryMail = "secondarymail1@test.test";
-    		
-	fillContactForm(contact);
+    fillContactForm(new ContactData("First name 1", "Last name 1", "Address 1", "home1", "000 000 01", "work1", "testemail1@test.com", "testemail2@test.com", "10", "March", "1985",
+			"Rob", "addresssecondary1", "homesecondary1"));
     submitContactCreation();
     returnToHomePage();
   }

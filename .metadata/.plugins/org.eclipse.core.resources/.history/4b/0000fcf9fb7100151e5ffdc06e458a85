@@ -15,10 +15,6 @@ public class ContactData {
 	public String group;
 	public String secondaryaddress;
 	public String secondaryhome;
-	
-	public ContactData(){
-		
-	}
 
 	public ContactData(String firstName, String lastName,
 			String mainAddress, String mainHome, String mobile, String work,
