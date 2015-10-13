@@ -3,7 +3,10 @@ package com.example.tests;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.*;
+
+
+
+
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
@@ -11,6 +14,9 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class GroupCreationTest {
   private WebDriver driver;
@@ -18,7 +24,7 @@ public class GroupCreationTest {
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
 
-  @Before
+  @BeforeClass
   public void setUp() throws Exception {
     driver = new FirefoxDriver();
     baseUrl = "http://localhost/";
@@ -30,7 +36,7 @@ public class GroupCreationTest {
 	  openMainPage();
       gotoGroupsPage();
       initNewGroupCreation();
-      GroupDate group = new GroupDate();
+      GroupData group = new GroupData();
       group.groupname = "group name 1";
       group.header ="header 1";
       group.footer ="footer 1";
@@ -44,7 +50,7 @@ public class GroupCreationTest {
 	  openMainPage();
       gotoGroupsPage();
       initNewGroupCreation();
-      fillGroupForm(new GroupDate("", "", ""));
+      fillGroupForm(new GroupData("", "", ""));
       submitGroupForm();
       gotoGroupsPage();
   }
@@ -53,7 +59,7 @@ private void submitGroupForm() {
     driver.findElement(By.name("submit")).click();
 }
 
-private void fillGroupForm(GroupDate Group) {
+private void fillGroupForm(GroupData Group) {
 	
     driver.findElement(By.name("group_name")).clear();
     driver.findElement(By.name("group_name")).sendKeys(Group.groupname);
@@ -78,7 +84,7 @@ private void openMainPage() {
     driver.get(baseUrl + "/addressbookv4.1.4/index.php");
 }
 
-  @After
+  @AfterClass
   public void tearDown() throws Exception {
     driver.quit();
     String verificationErrorString = verificationErrors.toString();
