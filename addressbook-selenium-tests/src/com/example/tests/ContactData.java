@@ -3,41 +3,38 @@ package com.example.tests;
 public class ContactData {
 	public String firstName;
 	public String lastName;
-	public String mainAddress;
-	public String mainHome;
+	public String address;
+	public String home;
 	public String mobile;
 	public String work;
-	public String mainMail;
-	public String secondaryMail;
+	public String email;
+	public String secodaryemail;
 	public String bdday;
 	public String bdmonth;
 	public String bdyear;
-	public String group;
-	public String secondaryaddress;
-	public String secondaryhome;
+	public String groupName;
+	public String secondaryAddress;
+	public String secondaryHome;
 	
-	public ContactData(){
-		
-	}
+	public ContactData (){}
 
-	public ContactData(String firstName, String lastName,
-			String mainAddress, String mainHome, String mobile, String work,
-			String mainMail, String secondaryMail, String bdday,
-			String bdmonth, String bdyear, String group,
-			String secondaryaddress, String secondaryhome) {
+	public ContactData(String firstName, String lastName, String address,
+			String home, String mobile, String work, String email,
+			String secodaryemail, String bdday, String bdmonth, String bdyear,
+			String groupName, String secondaryAddress, String secondaryHome) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.mainAddress = mainAddress;
-		this.mainHome = mainHome;
+		this.address = address;
+		this.home = home;
 		this.mobile = mobile;
 		this.work = work;
-		this.mainMail = mainMail;
-		this.secondaryMail = secondaryMail;
+		this.email = email;
+		this.secodaryemail = secodaryemail;
 		this.bdday = bdday;
 		this.bdmonth = bdmonth;
 		this.bdyear = bdyear;
-		this.group = group;
-		this.secondaryaddress = secondaryaddress;
-		this.secondaryhome = secondaryhome;
+		this.groupName = groupName;
+		this.secondaryAddress = secondaryAddress;
+		this.secondaryHome = secondaryHome;
 	}
 }

@@ -34,3 +34,31 @@
 1444774404344	Rename type 'GroupDate'
 1444775036495	Extract local variable 'contact'
 1444775557411	Extract local variable 'contact'
+1444814199120	Delete element
+1444814423113	Delete element
+1444814431375	Delete element
+1444814439517	Delete element
+1444814873779	Extract method 'openMainPage'
+1444814893406	Extract method 'initNewContactCreation'
+1444814926309	Extract method 'fillContactForm'
+1444814949593	Extract method 'submitContact'
+1444814970630	Extract method 'returnToHomePage'
+1444815152525	Rename method 'testUntitled'
+1444815321373	Introduce parameter for 'fillContactForm'
+1444815347164	Introduce parameter for 'fillContactForm'
+1444815369090	Introduce parameter for 'fillContactForm'
+1444815384972	Introduce parameter for 'fillContactForm'
+1444815402129	Introduce parameter for 'fillContactForm'
+1444815906890	Introduce parameter for 'fillContactForm'
+1444815951659	Introduce parameter for 'fillContactForm'
+1444815983811	Introduce parameter for 'fillContactForm'
+1444816091665	Introduce parameter for 'fillContactForm'
+1444816109863	Introduce parameter for 'fillContactForm'
+1444816123733	Introduce parameter for 'fillContactForm'
+1444816148272	Introduce parameter for 'fillContactForm'
+1444816193753	Introduce parameter for 'fillContactForm'
+1444816218499	Introduce parameter for 'fillContactForm'
+1444816788730	Introduce Parameter Object
+1444816823533	Rename type 'ontactData'
+1444817075759	Extract local variable 'contact'
+1444844805733	Pull up members to 'TestBase'
