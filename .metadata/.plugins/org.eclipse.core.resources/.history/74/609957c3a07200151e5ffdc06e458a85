@@ -4,7 +4,10 @@ import static org.junit.Assert.fail;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -14,7 +17,7 @@ import org.testng.annotations.BeforeTest;
 public class TestBase {
 
 	private static String baseUrl;
-	//private static boolean acceptNextAlert = true;
+	private static boolean acceptNextAlert = true;
 	private static StringBuffer verificationErrors = new StringBuffer();
 	private static WebDriver driver;
 
@@ -63,6 +66,12 @@ public class TestBase {
 	      fail(verificationErrorString);
 	    }
 	  }
+
+	
+
+	
+
+	
 
 	protected void returnToHomePage() {
 	
