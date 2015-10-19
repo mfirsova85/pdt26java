@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ContactCreationTest" project="addressbook-selenium-tests" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.example.tests.ContactCreationTest" time="22.934">
-    <testcase name="testemptycontactcreation" classname="com.example.tests.ContactCreationTest" time="12.515"/>
-    <testcase name="testnotemptycontactcreation" classname="com.example.tests.ContactCreationTest" time="10.419"/>
-  </testsuite>
-</testrun>

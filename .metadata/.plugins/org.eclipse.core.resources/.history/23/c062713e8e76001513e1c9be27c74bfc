@@ -1,0 +1,12 @@
+package com.example.fw;
+
+import com.example.tests.TestBase;
+
+public class NavigationHelper {
+
+	public void openMainPage() {
+		
+	   ApplicationManager.driver.get(TestBase.baseUrl + "/addressbookv4.1.4/index.php");
+	}
+
+}
