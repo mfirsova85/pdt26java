@@ -15,11 +15,7 @@ public class GroupHelper extends HelperBase {
 
 	public void submitGroupForm() {
 		
-	  click("submit");
-	}
-
-	private void click(String locator) {
-		driver.findElement(By.name(locator)).click();
+	  driver.findElement(By.name("submit")).click();
 	}
 
 	public void fillGroupForm( GroupData Group) {

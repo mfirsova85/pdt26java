@@ -14,7 +14,7 @@ public class ApplicationManager {
 	public  WebDriver driver;
 	
 	private NavigationHelper navigationHelper;
-    private HelperBase groupHelper;
+    private GroupHelper groupHelper;
 	private ContactHelper contactHelper;
 	
 	public ApplicationManager () {
@@ -37,7 +37,7 @@ public class ApplicationManager {
 		}
 		return navigationHelper;
 	}
-	public HelperBase getGroupHelper (){
+	public GroupHelper getGroupHelper (){
 		if (groupHelper == null) {
 			groupHelper = new GroupHelper  (this);
 		}

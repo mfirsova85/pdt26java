@@ -15,19 +15,18 @@ public class GroupHelper extends HelperBase {
 
 	public void submitGroupForm() {
 		
-	  click("submit");
-	}
-
-	private void click(String locator) {
-		driver.findElement(By.name(locator)).click();
+	  driver.findElement(By.name("submit")).click();
 	}
 
 	public void fillGroupForm( GroupData Group) {
 	
-type("group_name", Group.groupname);
-type("group_header", Group.header);
-type("group_footer", Group.footer);
-
+String locator = "group_name";
+driver.findElement(By.name(locator)).clear();
+driver.findElement(By.name(locator)).sendKeys(Group.groupname);
+driver.findElement(By.name("group_header")).clear();
+driver.findElement(By.name("group_header")).sendKeys(Group.header);
+driver.findElement(By.name("group_footer")).clear();
+driver.findElement(By.name("group_footer")).sendKeys(Group.footer);
 	}
 
 	public void initNewGroupCreation() {

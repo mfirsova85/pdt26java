@@ -14,15 +14,16 @@ public class ApplicationManager {
 	public  WebDriver driver;
 	
 	private NavigationHelper navigationHelper;
-    private HelperBase groupHelper;
+    private GroupHelper groupHelper;
 	private ContactHelper contactHelper;
-	
 	public ApplicationManager () {
 		driver = new FirefoxDriver();
 	    baseUrl = "http://localhost/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    
-	    
+	    navigationHelper =new NavigationHelper (this);
+	    groupHelper = new GroupHelper (this);
+	    contactHelper= new ContactHelper (this);
 	    
 	}
      
@@ -37,7 +38,7 @@ public class ApplicationManager {
 		}
 		return navigationHelper;
 	}
-	public HelperBase getGroupHelper (){
+	public GroupHelper getGroupHelper (){
 		if (groupHelper == null) {
 			groupHelper = new GroupHelper  (this);
 		}
