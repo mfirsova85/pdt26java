@@ -15,6 +15,7 @@ public class ContactData {
 	public String groupName;
 	public String secondaryAddress;
 	public String secondaryHome;
+	public String SecondaryPhone;
 	
 	public ContactData (){}
 

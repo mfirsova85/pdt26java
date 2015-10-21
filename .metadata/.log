@@ -3640,3 +3640,157 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2015-10-21 21:07:10.268
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 22:20:21.425
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.openqa.selenium.WebDriver
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      String baseUrl
+      StringBuffer verificationErrors
+      WebDriver driver
+      void setUp()
+      void tearDown()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String groupname
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactCreationTest.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTest
+      void testnotEmptyContactCreation()
+      void testEmptyContactCreation()
+  [Working copy] GroupCreationTest.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTest
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstName
+      String lastName
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String secodaryemail
+      String bdday
+      String bdmonth
+      String bdyear
+      String groupName
+      String secondaryAddress
+      String secondaryHome
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 22:20:30.017
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51182 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1310710448/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar org.testng.remote.RemoteTestNG -serport 51182 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1310710448/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 22:33:49.465
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupCreationTest
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 22:33:52.077
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51564 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1879890708/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar org.testng.remote.RemoteTestNG -serport 51564 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1879890708/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:41:41.931
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:41:53.381
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52294 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1682765534/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar org.testng.remote.RemoteTestNG -serport 52294 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1682765534/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:43:24.925
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:43:41.320
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52395 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--779254168/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar org.testng.remote.RemoteTestNG -serport 52395 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--779254168/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:47:15.288
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:47:26.215
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52495 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--254519609/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar org.testng.remote.RemoteTestNG -serport 52495 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--254519609/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:55:46.065
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:55:50.650
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52625 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1534056533/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar org.testng.remote.RemoteTestNG -serport 52625 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1534056533/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:57:52.324
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-21 23:57:57.029
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52721 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--123587847/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar org.testng.remote.RemoteTestNG -serport 52721 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--123587847/testng-customsuite.xml

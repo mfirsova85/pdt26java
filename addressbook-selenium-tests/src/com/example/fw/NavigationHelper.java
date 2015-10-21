@@ -18,12 +18,12 @@ public class NavigationHelper extends HelperBase{
 
 	public void returnToHomePage() {
 	
-		driver.findElement(By.linkText("home")).click();
+		click(By.name("home"));
 	}
 
 	public void gotoGroupsPage() {
 	
-		driver.findElement(By.linkText("groups")).click();
+		click(By.name("groups"));
 	}
 
 }

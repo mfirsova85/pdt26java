@@ -15,11 +15,7 @@ public class GroupHelper extends HelperBase {
 
 	public void submitGroupForm() {
 		
-	  click("submit");
-	}
-
-	private void click(String locator) {
-		driver.findElement(By.name(locator)).click();
+	  click(By.name("submit"));
 	}
 
 	public void fillGroupForm( GroupData Group) {
@@ -32,7 +28,14 @@ type("group_footer", Group.footer);
 
 	public void initNewGroupCreation() {
 		
-	   driver.findElement(By.name("new")).click();
+		click(By.name("new"));
+	}
+
+	public void deleteGroup(int index) {
+		// TODO Auto-generated method stub
+		//click(By.xpath("//input[@name='selected[]'] ["+index+"] "));
+		click(By.name("delete"));
+		
 	}
 
 }

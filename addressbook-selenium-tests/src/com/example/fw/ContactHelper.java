@@ -1,7 +1,6 @@
 package com.example.fw;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 
 import com.example.tests.ContactData;
 import com.example.tests.TestBase;
@@ -13,43 +12,32 @@ public class ContactHelper extends HelperBase {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void fillContactForm(ApplicationManager applicationManager, TestBase testBase, ContactData contact) {
-	
-	 driver.findElement(By.name("firstname")).clear();
-	 driver.findElement(By.name("firstname")).sendKeys(contact.firstName);
-	 driver.findElement(By.name("lastname")).clear();
-	 driver.findElement(By.name("lastname")).sendKeys(contact.lastName);
-	 driver.findElement(By.name("address")).clear();
-	 driver.findElement(By.name("address")).sendKeys(contact.address);
-	 driver.findElement(By.name("home")).clear();
-	 driver.findElement(By.name("home")).sendKeys(contact.home);
-	 driver.findElement(By.name("mobile")).clear();
-	 driver.findElement(By.name("mobile")).sendKeys(contact.mobile);
-	 driver.findElement(By.name("work")).clear();
-	 driver.findElement(By.name("work")).sendKeys(contact.work);
-	 driver.findElement(By.name("email")).clear();
-	 driver.findElement(By.name("email")).sendKeys(contact.email);
-	 driver.findElement(By.name("email2")).clear();
-	 driver.findElement(By.name("email2")).sendKeys(contact.secodaryemail);
-	    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(contact.bdday);
-	    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(contact.bdmonth);
-	   driver.findElement(By.name("byear")).clear();
-	   driver.findElement(By.name("byear")).sendKeys(contact.bdyear);
-	    new Select(manager.driver.findElement(By.name("new_group"))).selectByVisibleText(contact.groupName);
-	   driver.findElement(By.name("address2")).clear();
-	   driver.findElement(By.name("address2")).sendKeys(contact.secondaryAddress);
-	   driver.findElement(By.name("phone2")).clear();
-	   driver.findElement(By.name("phone2")).sendKeys(contact.secondaryHome);
+	public void fillContactForm( ContactData contact) {
+		type("firstname", contact.firstName);
+		type("lastname", contact.lastName);
+		type("home", contact.address);
+		type("address", contact.home);
+	    type("mobile", contact.mobile);
+	    type("work", contact.work);
+	    type("email", contact.email);
+	    type("email12", contact.secodaryemail);
+	    selectByText(By.name("bday"), contact.bdday);
+	    selectByText(By.name("bmonth"), contact.bdmonth);
+	    type("byear", contact.bdyear);
+	    selectByText(By.name("new_group"), contact.groupName);  
+	    type("address2", contact.secondaryAddress);
+	    type("phone2", contact.SecondaryPhone);
+	  ;
 	}
 
 	public void initNewContactCreation() {
 		
-	   driver.findElement(By.linkText("add new")).click();
+		click(By.name("add new"));
 	}
 
 	public void submitContact() {
 	
-	   driver.findElement(By.name("submit")).click();
+		click(By.name("submit"));
 	}
 
 }

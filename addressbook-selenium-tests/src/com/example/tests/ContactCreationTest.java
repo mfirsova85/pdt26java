@@ -23,8 +23,8 @@ public class ContactCreationTest extends TestBase {
       contact.secondaryAddress ="secondaryaddress2";
       contact.secondaryHome ="secondaryhome2";
       
-     app.getContactHelper ().fillContactForm(app, this, contact);
-     app.getContactHelper ().submitContact();
+     app.getContactHelper ().fillContactForm(contact);
+     app.getContactHelper().submitContact();
      app.getNavigationHelper().returnToHomePage();
   }
   
@@ -32,7 +32,7 @@ public class ContactCreationTest extends TestBase {
   public void testEmptyContactCreation() throws Exception {
 	  app.getNavigationHelper().openMainPage();
       app.getContactHelper().initNewContactCreation();
-      app.getContactHelper().fillContactForm(app, this, new ContactData("", "", "", "", "", "", "", "", "-", "-", "-", "", "", ""));
+      app.getContactHelper().fillContactForm(new ContactData("", "", "", "", "", "", "", "", "-", "-", "-", "", "", ""));
       app.getContactHelper().submitContact();
       app.getNavigationHelper().returnToHomePage();
   }
