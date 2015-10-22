@@ -5,53 +5,36 @@ import org.openqa.selenium.By;
 import com.example.tests.GroupData;
 import com.example.tests.TestBase;
 
-public class GroupHelper extends HelperBase { 
+public class GroupHelper extends HelperBase {
 
 	public GroupHelper(ApplicationManager manager) {
 		super(manager);
 		
-		
 	}
 
-	public void submitGroupForm() {
+	public void fillGroupForm(GroupData Group) {
 		
-	  click(By.name("submit"));
-	}
-
-	public void fillGroupForm( GroupData Group) {
-	
-type("group_name", Group.groupname);
-type("group_header", Group.header);
-type("group_footer", Group.footer);
-
+	   driver.findElement(By.name("group_name")).clear();
+	   driver.findElement(By.name("group_name")).sendKeys(Group.groupname);
+	   driver.findElement(By.name("group_header")).clear();
+	   driver.findElement(By.name("group_header")).sendKeys(Group.header);
+	   driver.findElement(By.name("group_footer")).clear();
+	   driver.findElement(By.name("group_footer")).sendKeys(Group.footer);
 	}
 
 	public void initNewGroupCreation() {
 		
-		click(By.name("new"));
+	   driver.findElement(By.name("new")).click();
 	}
 
-	public void deleteGroup(int index) {
-		// TODO Auto-generated method stub
-		selectGroupByIndex(index);
-		click(By.name("delete"));
+	public void gotoGroupsPage() {
+	
+	  driver.findElement(By.linkText("groups")).click();
+	}
+	
+    public void submitGroupForm() {
 		
-	}
-
-	private void selectGroupByIndex(int index) {
-		click(By.xpath("//input[@name='selected[]'] ["+index+"] "));
-	}
-
-	public void initGroupModification(int index) {
-		// TODO Auto-generated method stub
-		selectGroupByIndex(index);
-		click(By.name("edit"));
-		
-	}
-
-	public void submitGroupModification() {
-		// TODO Auto-generated method stub
-		click(By.name("update"));
+	   driver.findElement(By.name("submit")).click();
 	}
 
 }
