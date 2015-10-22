@@ -15,8 +15,8 @@ public class ApplicationManager {
 	public  WebDriver driver;
 
 	private NavigationHelper navigationHelper;
-	private GroupHelper groupHelper;
-	private ContactHelper contactHelper;
+	public GroupHelper groupHelper;
+	public ContactHelper contactHelper;
 	
 	public ApplicationManager () {
 		   driver = new FirefoxDriver();

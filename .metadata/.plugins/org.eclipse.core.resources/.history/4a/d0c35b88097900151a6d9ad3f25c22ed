@@ -12,9 +12,9 @@ public class GroupCreationTest extends TestBase{
       group.groupname = "group name 1";
       group.header ="header 1";
       group.footer ="footer 1";
-	  app.getGroupHelper().fillGroupForm(group);
-      app.getGroupHelper().submitGroupForm();
-      app.getGroupHelper().gotoGroupsPage();
+	  app.groupHelper.fillGroupForm(group);
+      app.groupHelper.submitGroupForm();
+      app.groupHelper.gotoGroupsPage();
   }
   
   @Test
