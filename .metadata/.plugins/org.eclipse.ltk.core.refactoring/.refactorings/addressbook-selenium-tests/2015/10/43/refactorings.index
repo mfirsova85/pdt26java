@@ -27,3 +27,4 @@
 1445457524279	Inline local variable 'locator'
 1445457534351	Inline local variable 'text'
 1445457763020	Pull up 'selectByText(By, String)' to 'HelperBase'
+1445506492644	Extract method 'selectGroupByIndex'

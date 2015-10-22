@@ -33,25 +33,19 @@ type("group_footer", Group.footer);
 
 	public void deleteGroup(int index) {
 		// TODO Auto-generated method stub
-		selectGroupByIndex(index);
+		click(By.xpath("//input[@name='selected[]'] ["+index+"] "));
 		click(By.name("delete"));
 		
 	}
 
-	private void selectGroupByIndex(int index) {
-		click(By.xpath("//input[@name='selected[]'] ["+index+"] "));
-	}
-
-	public void initGroupModification(int index) {
+	public void initGroupModification(int i) {
 		// TODO Auto-generated method stub
-		selectGroupByIndex(index);
-		click(By.name("edit"));
 		
 	}
 
 	public void submitGroupModification() {
 		// TODO Auto-generated method stub
-		click(By.name("update"));
+		
 	}
 
 }
