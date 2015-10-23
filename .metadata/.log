@@ -5691,3 +5691,237 @@ java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.j
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 52724 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1288774192/testng-customsuite.xml
 java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin org.testng.remote.RemoteTestNG -serport 52724 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1288774192/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-23 16:46:03.961
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String groupname
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactCreationTest.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTest
+      void testnotEmptyContactCreation()
+      void testEmptyContactCreation()
+  GroupCreationTest.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTest
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  GroupRemovalTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupRemovalTests
+      void deleteSomeGroup()
+  ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstName
+      String lastName
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String secodaryemail
+      String bdday
+      String bdmonth
+      String bdyear
+      String groupName
+      String secondaryAddress
+      String secondaryHome
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupModificationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupModificationTests
+      void modifySomeGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-23 16:46:04.161
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53017 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-727704661/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin org.testng.remote.RemoteTestNG -serport 53017 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-727704661/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-23 16:46:56.653
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-23 16:46:56.778
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53247 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1898018870/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin org.testng.remote.RemoteTestNG -serport 53247 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1898018870/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-23 16:50:23.975
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String groupname
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactCreationTest.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTest
+      void testnotEmptyContactCreation()
+      void testEmptyContactCreation()
+  GroupCreationTest.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTest
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  GroupRemovalTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupRemovalTests
+      void deleteSomeGroup()
+  ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstName
+      String lastName
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String secodaryemail
+      String bdday
+      String bdmonth
+      String bdyear
+      String groupName
+      String secondaryAddress
+      String secondaryHome
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupModificationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupModificationTests
+      void modifySomeGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-23 16:50:24.186
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53370 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--2112159264/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin org.testng.remote.RemoteTestNG -serport 53370 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--2112159264/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-10-23 17:07:13.448
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String groupname
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactCreationTest.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTest
+      void testnotEmptyContactCreation()
+      void testEmptyContactCreation()
+  GroupCreationTest.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTest
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  GroupRemovalTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupRemovalTests
+      void deleteSomeGroup()
+  ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstName
+      String lastName
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String secodaryemail
+      String bdday
+      String bdmonth
+      String bdyear
+      String groupName
+      String secondaryAddress
+      String secondaryHome
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupModificationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupModificationTests
+      void modifySomeGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-10-23 17:07:13.642
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53722 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1658913309/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin org.testng.remote.RemoteTestNG -serport 53722 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1658913309/testng-customsuite.xml

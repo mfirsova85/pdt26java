@@ -13,7 +13,7 @@ import com.example.fw.ApplicationManager;
 
 public class TestBase {
 	
-	static ApplicationManager app;
+	protected ApplicationManager app;
 
 	
 	@BeforeTest
