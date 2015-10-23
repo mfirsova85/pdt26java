@@ -35,4 +35,25 @@ public class GroupHelper extends HelperBase {
 	   click(By.name("submit"));
 	}
 
+	public void deleteGroup(int index) {
+	    selectGroup(index);
+		click(By.name("delete"));
+	}
+
+	private void selectGroup(int index) {
+		click(By.xpath("//input [@name='selected[]']["+index+"]"));
+	}
+
+	public void initGroupModification(int index) {
+		selectGroup(index);
+		click(By.name("edit"));
+	}
+
+	public void submitGroupModification() {
+		// TODO Auto-generated method stub
+
+		click(By.name("update"));
+		
+	}
+
 }
