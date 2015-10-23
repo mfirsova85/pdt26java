@@ -14,27 +14,25 @@ public class GroupHelper extends HelperBase {
 
 	public void fillGroupForm(GroupData Group) {
 		
-	   driver.findElement(By.name("group_name")).clear();
-	   driver.findElement(By.name("group_name")).sendKeys(Group.groupname);
-	   driver.findElement(By.name("group_header")).clear();
-	   driver.findElement(By.name("group_header")).sendKeys(Group.header);
-	   driver.findElement(By.name("group_footer")).clear();
-	   driver.findElement(By.name("group_footer")).sendKeys(Group.footer);
+	   type(By.name("group_name"), Group.groupname);
+	   type(By.name("group_header"), Group.header);
+	   type(By.name("group_footer"), Group.footer);
+	   
 	}
 
 	public void initNewGroupCreation() {
 		
-	   driver.findElement(By.name("new")).click();
+	   click(By.name("new"));
 	}
 
 	public void gotoGroupsPage() {
 	
-	  driver.findElement(By.linkText("groups")).click();
+		click(By.linkText("groups"));
 	}
 	
     public void submitGroupForm() {
 		
-	   driver.findElement(By.name("submit")).click();
+	   click(By.name("submit"));
 	}
 
 }
