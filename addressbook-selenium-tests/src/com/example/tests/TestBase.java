@@ -1,11 +1,5 @@
 package com.example.tests;
 
-import static org.junit.Assert.fail;
-
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 

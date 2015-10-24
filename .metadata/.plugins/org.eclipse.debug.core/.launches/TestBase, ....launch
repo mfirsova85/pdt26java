@@ -12,6 +12,8 @@
 <listEntry value="com.example.tests.GroupData"/>
 <listEntry value="com.example.tests.GroupCreationTest"/>
 <listEntry value="com.example.tests.TestBase"/>
+<listEntry value="com.example.tests.ContactModificationTest"/>
+<listEntry value="com.example.tests.ContactRemovalTest"/>
 </listAttribute>
 <booleanAttribute key="org.testng.eclipse.DEBUG" value="false"/>
 <listAttribute key="org.testng.eclipse.GROUP_LIST"/>

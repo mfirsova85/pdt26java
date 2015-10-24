@@ -42,4 +42,23 @@ public class ContactHelper extends HelperBase {
 	 type(By.name("phone2"),contact.secondaryHome);
 	}
 
-}
+	public void submitContactModification() {
+		click(By.name("update"));
+		
+	}
+
+	public void initContactModification(int index) {
+	  click(By.id("id"+index));
+	  click (By.xpath("(//img[@alt='Edit'])["+index+"]"));
+	}
+
+	public void deleteContactModification() {
+		click (By.xpath("(//input[@name='update'])[2]"));
+	}
+
+	
+		
+	}
+
+
+

@@ -69,3 +69,8 @@
 1445605026849	Pull up 'selectByText(By, String)' to 'HelperBase'
 1445606243334	Rename compilation unit 'GroupModification.java'
 1445606659930	Extract method 'selectGroup'
+1445677285947	Extract local variable 'index'
+1445677562146	Extract local variable 'locator'
+1445678912333	Extract local variable 'locator'
+1445678956716	Extract method 'click'
+1445678972166	Inline local variable 'locator'
