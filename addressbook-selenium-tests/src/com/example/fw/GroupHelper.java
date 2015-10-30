@@ -12,6 +12,8 @@ import com.example.tests.TestBase;
 public class GroupHelper extends HelperBase {
 
 
+	
+
 	public GroupHelper(ApplicationManager manager) {
 		super(manager);
 		
@@ -46,7 +48,7 @@ public class GroupHelper extends HelperBase {
 	}
 
 	private void selectGroup(int index) {
-		click(By.xpath("//input [@name='selected[]']["+index+"]"));
+		click(By.xpath("//input [@name='selected[]']["+(index+1)+"]"));
 	}
 
 	public void initGroupModification(int index) {
@@ -68,7 +70,7 @@ public class GroupHelper extends HelperBase {
 		for (WebElement checkbox:checkboxes) {
 			GroupData group = new GroupData();
 			String title =checkbox.getAttribute("title");
-	        group.groupname=title.substring("Select(".length(), title.length()-")".length());
+	        group.groupname=title.substring("Select (".length(), title.length()-")".length());
 		   groups.add(group);
 		   }
 		return groups;
