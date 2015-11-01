@@ -1,1 +1,14 @@
 /bin/
+/target/
+.metadata/
+.classpath
+.project
+*.class
+/addressbook-selenium-tests/.metadata/
+/addressbook-selenium-tests/.classpath
+/addressbook-selenium-tests/bin/
+/addressbook-selenium-tests/.project
+
+ 
+
+
