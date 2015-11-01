@@ -21,7 +21,7 @@ public class GroupModificationTests extends TestBase{
 	      int index =rnd.nextInt(oldlist.size()-1);
 	      //actions
 	      app.getGroupHelper().initGroupModification(index);
-		  app.getGroupHelper().fillGroupForm( group);
+		  app.getGroupHelper().fillGroupForm(group);
 	      app.getGroupHelper().submitGroupModification();
 	      app.getGroupHelper().gotoGroupsPage();
 	      

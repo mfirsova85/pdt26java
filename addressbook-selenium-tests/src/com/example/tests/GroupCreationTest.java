@@ -38,7 +38,7 @@ public class GroupCreationTest extends TestBase{
       
   }
   
-  @Test 
+ // @Test 
   
   public void testGroupCreationWithInvalidData() throws Exception {
 	  app.getNavigationHelper().openMainPage();
