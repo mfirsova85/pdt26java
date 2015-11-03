@@ -25,6 +25,8 @@
 		<item value="2" key="AccessModifier"/>
 		<item value="false" key="ThrowRuntimeExceptions"/>
 	</section>
+	<section name="BreadcrumbItemDropDown">
+	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>

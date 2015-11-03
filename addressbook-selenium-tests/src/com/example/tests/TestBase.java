@@ -54,6 +54,33 @@ public class TestBase {
 			}
 	    }
 	    
-	   
+		@DataProvider
+		public Iterator<Object[]> randomValidContactgenerator() {
+			List<Object[]> list =new ArrayList<Object[]>();
+			Random rnd =new Random();
+			for (int i =0;i<5;i++) {
+				ContactData contact =new ContactData();
+				
+				contact.firstName =generateRandomString();
+			
+				contact.lastName =generateRandomString();
+				contact.address =generateRandomString();
+				contact.home =generateRandomString();
+				contact.mobile =generateRandomString();
+				contact.work =generateRandomString();
+				contact.email =generateRandomString();
+				contact.secodaryemail =generateRandomString();
+				contact.bdday ="10";
+				contact.bdmonth ="May";
+				contact.bdyear ="1985";
+				contact.groupName ="Rob";
+				contact.secondaryAddress =generateRandomString();
+				contact.secondaryHome =generateRandomString();
+				list.add(new Object[]{contact});	
+				}
+				return list.iterator();
+			}
+		
+	
 
 }
