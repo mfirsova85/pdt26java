@@ -35,9 +35,9 @@ public class TestBase {
 	    	Random rnd= new Random();
 	    	for (int i=0;i < 6; i++) {
 	    		GroupData group =new GroupData();
-	    		group.groupname=generateRandomString();
-	    		group.header=generateRandomString();
-	    		group.footer =generateRandomString();
+	    		group.groupname=generateRandomString(10);
+	    		group.header=generateRandomString(10);
+	    		group.footer =generateRandomString(10);
 	    		list.add (new Object[] {group});
 	    		
 	    	}
@@ -45,42 +45,80 @@ public class TestBase {
 	    	return list.iterator();
 	    }
 	    
-	    public String generateRandomString () {
-	    	Random rnd= new Random();
-	    	if (rnd.nextInt(3)==0) {
-				return "";
-			}else {
-			return "test" +rnd.nextInt();
+	 // public String generateRandomString () {
+	 //	Random rnd= new Random();
+	 // 	if (rnd.nextInt(3)==0) {
+	 //		return "";
+				 //	}else {
+	 //	return "test" +rnd.nextInt();
+	 //		}
+	 //   }
+	  
+
+	public static String generateRandomString(int length) {
+	   final char[] KEYCHARS = "0123456789ABCDEFGhijklmnopqrstuvwxyz±$!@#%&*()".toCharArray();
+		  Random randomizer = new Random();
+		  char[] randomString = new char[length];
+	Random rnd=new Random ();
+	if (rnd.nextInt(3)==0) {return "";}
+	else {
+		  for (int i = 0; i < length; i++) {
+	       randomString[i] = KEYCHARS[randomizer.nextInt(KEYCHARS.length)];
+	   }
+	  return new String(randomString);
+		}}
+	 
+		@DataProvider
+		public Iterator<Object[]> randomValidContactgeneratorWithoutGroupName() {
+			List<Object[]> list =new ArrayList<Object[]>();
+			Random rnd =new Random();
+			for (int i =0;i<5;i++) {
+				ContactData contact =new ContactData();
+				contact.firstName =generateRandomString(10);
+				contact.lastName =generateRandomString(10);
+				contact.address =generateRandomString(10);
+				contact.home =generateRandomString(10);
+				contact.mobile =generateRandomString(10);
+				contact.work =generateRandomString(10);
+				contact.email =generateRandomString(10);
+				contact.secodaryemail =generateRandomString(10);
+				contact.bdday ="10";
+				contact.bdmonth ="May";
+				contact.bdyear ="1985";
+				contact.secondaryAddress =generateRandomString(10);
+				contact.secondaryHome =generateRandomString(10);
+				list.add(new Object[]{contact});	
+				}
+			    
+			
+			
+				return list.iterator();
 			}
-	    }
-	    
+		
 		@DataProvider
 		public Iterator<Object[]> randomValidContactgenerator() {
 			List<Object[]> list =new ArrayList<Object[]>();
 			Random rnd =new Random();
 			for (int i =0;i<5;i++) {
 				ContactData contact =new ContactData();
-				
-				contact.firstName =generateRandomString();
-			
-				contact.lastName =generateRandomString();
-				contact.address =generateRandomString();
-				contact.home =generateRandomString();
-				contact.mobile =generateRandomString();
-				contact.work =generateRandomString();
-				contact.email =generateRandomString();
-				contact.secodaryemail =generateRandomString();
+				contact.firstName =generateRandomString(10);
+				contact.lastName =generateRandomString(10);
+				contact.address =generateRandomString(10);
+				contact.home =generateRandomString(10);
+				contact.mobile =generateRandomString(10);
+				contact.work =generateRandomString(10);
+				contact.email =generateRandomString(10);
+				contact.secodaryemail =generateRandomString(10);
 				contact.bdday ="10";
 				contact.bdmonth ="May";
 				contact.bdyear ="1985";
-				contact.groupName ="Rob";
-				contact.secondaryAddress =generateRandomString();
-				contact.secondaryHome =generateRandomString();
+				contact.secondaryAddress =generateRandomString(10);
+				contact.secondaryHome =generateRandomString(10);
 				list.add(new Object[]{contact});	
 				}
+			    
+			
 				return list.iterator();
 			}
-		
-	
 
 }

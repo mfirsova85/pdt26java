@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class ContactModificationTest extends TestBase{
 	
-		@Test (dataProvider ="randomValidContactgenerator")
+		@Test (dataProvider ="randomValidContactgeneratorWithoutGroupName")
 		  public void modifySomeContact (ContactData contact) throws Exception {
 			 app.getNavigationHelper().openMainPage();
 			 //save old list
