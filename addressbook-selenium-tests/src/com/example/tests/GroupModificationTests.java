@@ -30,7 +30,6 @@ public class GroupModificationTests extends TestBase{
 	      List<GroupData> newlist=app.getGroupHelper().getGroups();
 	      
 	      //compare old and new list
-	     
 	      
 	      oldlist.remove(index);
 	      oldlist.add(group);

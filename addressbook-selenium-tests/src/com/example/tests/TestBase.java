@@ -89,9 +89,7 @@ public class TestBase {
 				contact.secondaryHome =generateRandomString(10);
 				list.add(new Object[]{contact});	
 				}
-			    
-			
-			
+
 				return list.iterator();
 			}
 		
@@ -116,8 +114,7 @@ public class TestBase {
 				contact.secondaryHome =generateRandomString(10);
 				list.add(new Object[]{contact});	
 				}
-			    
-			
+
 				return list.iterator();
 			}
 

@@ -17,12 +17,15 @@ public class ContactRemovalTest extends TestBase{
 				List<ContactData> oldlist=app.getContactHelper().getContacts();
 				Random rnd =new Random ();
 			    int index =rnd.nextInt(oldlist.size()-1);
+			    
 				//actions
 			  app.getContactHelper().initContactModification(index);
 			  app.getContactHelper().deleteContactModification();
 		      app.getNavigationHelper().openMainPage();
+		      
 		      //save new list
-		   List<ContactData> newlist=app.getContactHelper().getContacts();
+		      List<ContactData> newlist=app.getContactHelper().getContacts();
+		      
 		      //compare lists
 		      
 		 oldlist.remove (index);

@@ -9,7 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class ApplicationManager {
 	public  String baseUrl;
 	//private boolean acceptNextAlert = true;
-	
 	public  WebDriver driver;
 
 	private NavigationHelper navigationHelper;

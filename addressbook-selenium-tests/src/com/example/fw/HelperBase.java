@@ -8,7 +8,6 @@ public abstract class HelperBase {
 
 	protected ApplicationManager manager;
 	public WebDriver driver;
-	
 	public HelperBase (ApplicationManager manager) {
 		this.manager = manager;
 		this.driver = manager.driver;

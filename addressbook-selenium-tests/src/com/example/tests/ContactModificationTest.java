@@ -14,6 +14,7 @@ public class ContactModificationTest extends TestBase{
 			 app.getNavigationHelper().openMainPage();
 			 //save old list
 			 List<ContactData> oldlist=app.getContactHelper().getContacts();
+			 
 			 //actions
 			    Random rnd =new Random ();
 			    int index =rnd.nextInt(oldlist.size()-1);
@@ -21,8 +22,10 @@ public class ContactModificationTest extends TestBase{
 			      app.getContactHelper().fillContactForm(contact);
 		          app.getContactHelper().submitContactModification();
 		          app.getNavigationHelper().openMainPage();
+		          
 		      //save new list
 		      List<ContactData> newlist=app.getContactHelper().getContacts();
+		      
 		      //compare lists
 		     oldlist.remove (index);
 		     oldlist.add (contact);

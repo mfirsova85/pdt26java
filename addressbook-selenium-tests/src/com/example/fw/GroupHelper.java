@@ -12,7 +12,6 @@ import com.example.tests.TestBase;
 public class GroupHelper extends HelperBase {
 
 
-	
 
 	public GroupHelper(ApplicationManager manager) {
 		super(manager);

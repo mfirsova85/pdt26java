@@ -43,10 +43,10 @@ public class GroupCreationTest extends TestBase{
   public void testGroupCreationWithInvalidData() throws Exception {
 	  app.getNavigationHelper().openMainPage();
       app.getGroupHelper().gotoGroupsPage();
-      //save old state
       
-       
+      //save old state
       List<GroupData> oldlist=app.getGroupHelper().getGroups();
+      
       //actions
       GroupData group =new GroupData();
       group.groupname ="test'";

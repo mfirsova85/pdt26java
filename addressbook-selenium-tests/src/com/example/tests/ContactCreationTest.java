@@ -22,19 +22,15 @@ public class ContactCreationTest extends TestBase {
 	  //save old list
 	  List<ContactData> oldlist=app.getContactHelper().getContacts();
 	  //actions
-	  app.getContactHelper().initNewContactCreation();
-	  
-      
+	 app.getContactHelper().initNewContactCreation();
      app.getContactHelper().fillContactForm(contact);
      app.getContactHelper().submitContact();
      app.getNavigationHelper().returnToHomePage();
      
      //save new list
      List<ContactData> newlist=app.getContactHelper().getContacts();
+     
      //compare lists
-     
-    // Assert.assertEquals (newlist.size(),oldlist.size()+1);
-     
      oldlist.add (contact);
      Collections.sort(oldlist);
      Assert.assertEquals(newlist, oldlist);

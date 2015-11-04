@@ -76,7 +76,6 @@ public class ContactData implements Comparable<ContactData>{
 			return false;
 		return true;
 	}
-	
 	@Override
 	public int compareTo(ContactData other) {
 		
