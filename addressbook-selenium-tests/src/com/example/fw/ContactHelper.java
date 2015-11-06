@@ -15,7 +15,6 @@ public class ContactHelper extends HelperBase {
 		super(manager);
 		
 	}
-
 	public void initNewContactCreation() {
 		
 	   click(By.linkText("add new"));
@@ -27,24 +26,24 @@ public class ContactHelper extends HelperBase {
 	}
 
 	public void fillContactForm(ContactData contact) {
-		 type(By.name("firstname"), contact.firstName);
-		 type(By.name("lastname"), contact.lastName);
-	     type(By.name("address"),contact.address);
-	     type (By.name("home"),contact.home);
-         type (By.name("mobile"),contact.mobile);
-         type (By.name("work"),contact.work);
-         type (By.name("email"),contact.email);	
-         type (By.name("email2"),contact.secodaryemail);
+		 type(By.name("firstname"), contact.getFirstName());
+		 type(By.name("lastname"), contact.getLastName());
+	     type(By.name("address"),contact.getAddress());
+	     type (By.name("home"),contact.getHome());
+         type (By.name("mobile"),contact.getMobile());
+         type (By.name("work"),contact.getWork());
+         type (By.name("email"),contact.getEmail());	
+         type (By.name("email2"),contact.getSecodaryemail());
 	
-	    selectByText(By.name("bday"), contact.bdday);
-	    selectByText(By.name("bmonth"),contact.bdmonth);
+	    selectByText(By.name("bday"), contact.getBdday());
+	    selectByText(By.name("bmonth"),contact.getBdmonth());
 	 
-	 type(By.name("byear"),contact.bdyear);
+	 type(By.name("byear"),contact.getBdyear());
 	 
-	 selectByText(By.name("new_group"),contact.groupName);
+	 selectByText(By.name("new_group"),contact.getGroupName());
 	 
-	 type(By.name("address2"),contact.secondaryAddress);
-	 type(By.name("phone2"),contact.secondaryHome);
+	 type(By.name("address2"),contact.getSecondaryAddress());
+	 type(By.name("phone2"),contact.getSecondaryHome());
 	}
 
 	public void submitContactModification() {
@@ -67,9 +66,11 @@ public class ContactHelper extends HelperBase {
         for ( int contactsrowi = 0 ; contactsrowi < contactsrows.size() ; contactsrowi++ ){
               WebElement contactsrow = contactsrows.get(contactsrowi);
               List<WebElement> contactinformation = contactsrow.findElements(By.tagName("td"));
-              ContactData contact = new ContactData();
-              contact.lastName = contactinformation.get(1).getText();
-              contact.firstName = contactinformation.get(2).getText();
+              String firstName = contactinformation.get(1).getText();
+              String lastName = contactinformation.get(2).getText();
+              ContactData contact = new ContactData()
+              .withFirstName(firstName)
+              .withLastName(lastName);
               contacts.add(contact);                                                                
         }
         return contacts;

@@ -34,26 +34,23 @@ public class TestBase {
 	    	List <Object[]> list =new ArrayList<Object[]> ();
 	    	Random rnd= new Random();
 	    	for (int i=0;i < 6; i++) {
-	    		GroupData group =new GroupData();
-	    		group.groupname=generateRandomString(10);
-	    		group.header=generateRandomString(10);
-	    		group.footer =generateRandomString(10);
+	    		GroupData group =new GroupData()
+	    		.withGroupName(generateRandomString(10))
+	    		.withHeader(generateRandomString(10))
+	    		.withFooter(generateRandomString(10));
+	    		
 	    		list.add (new Object[] {group});
 	    		
 	    	}
 	    	
 	    	return list.iterator();
 	    }
-	    
-	 // public String generateRandomString () {
-	 //	Random rnd= new Random();
-	 // 	if (rnd.nextInt(3)==0) {
-	 //		return "";
-				 //	}else {
-	 //	return "test" +rnd.nextInt();
-	 //		}
-	 //   }
+	
 	  
+
+	
+
+	
 
 	public static String generateRandomString(int length) {
 	   final char[] KEYCHARS = "0123456789ABCDEFGhijklmnopqrstuvwxyz±$!@#%&*()".toCharArray();
@@ -73,20 +70,21 @@ public class TestBase {
 			List<Object[]> list =new ArrayList<Object[]>();
 			Random rnd =new Random();
 			for (int i =0;i<5;i++) {
-				ContactData contact =new ContactData();
-				contact.firstName =generateRandomString(10);
-				contact.lastName =generateRandomString(10);
-				contact.address =generateRandomString(10);
-				contact.home =generateRandomString(10);
-				contact.mobile =generateRandomString(10);
-				contact.work =generateRandomString(10);
-				contact.email =generateRandomString(10);
-				contact.secodaryemail =generateRandomString(10);
-				contact.bdday ="10";
-				contact.bdmonth ="May";
-				contact.bdyear ="1985";
-				contact.secondaryAddress =generateRandomString(10);
-				contact.secondaryHome =generateRandomString(10);
+				ContactData contact =new ContactData()
+				.withFirstName (generateRandomString(10))
+				.withLastName (generateRandomString(10))
+				.withAddress (generateRandomString(10))
+				.withHome (generateRandomString(10))
+				.withMobile (generateRandomString(10))
+				.withWork (generateRandomString(10))
+				.witheMail (generateRandomString(10))
+				.withSecodaryemail (generateRandomString(10))
+				.withBdDay ("10")
+				.withBdMonth ("May")
+				.withBdYear ("1985")
+				.withSecondaryAddress(generateRandomString(10))
+				.withSecondaryHome (generateRandomString(10));
+				
 				list.add(new Object[]{contact});	
 				}
 
@@ -98,24 +96,35 @@ public class TestBase {
 			List<Object[]> list =new ArrayList<Object[]>();
 			Random rnd =new Random();
 			for (int i =0;i<5;i++) {
-				ContactData contact =new ContactData();
-				contact.firstName =generateRandomString(10);
-				contact.lastName =generateRandomString(10);
-				contact.address =generateRandomString(10);
-				contact.home =generateRandomString(10);
-				contact.mobile =generateRandomString(10);
-				contact.work =generateRandomString(10);
-				contact.email =generateRandomString(10);
-				contact.secodaryemail =generateRandomString(10);
-				contact.bdday ="10";
-				contact.bdmonth ="May";
-				contact.bdyear ="1985";
-				contact.secondaryAddress =generateRandomString(10);
-				contact.secondaryHome =generateRandomString(10);
-				list.add(new Object[]{contact});	
+				ContactData contact =new ContactData()
+				.withFirstName (generateRandomString(10))
+				.withLastName (generateRandomString(10))
+				.withAddress (generateRandomString(10))
+				.withHome (generateRandomString(10))
+				.withMobile (generateRandomString(10))
+				.withWork (generateRandomString(10))
+				.witheMail (generateRandomString(10))
+				.withSecodaryemail (generateRandomString(10))
+				.withBdDay ("10")
+				.withBdMonth ("May")
+				.withBdYear ("1985")
+				.withGroupName ("Rob")
+				.withSecondaryAddress(generateRandomString(10))
+				.withSecondaryHome (generateRandomString(10));
+				
+				list.add(new Object[]{contact});
+				
 				}
 
 				return list.iterator();
 			}
-
+	    
+		 // public String generateRandomString () {
+		 //	Random rnd= new Random();
+		 // 	if (rnd.nextInt(3)==0) {
+		 //		return "";
+					 //	}else {
+		 //	return "test" +rnd.nextInt();
+		 //		}
+		 //   }
 }

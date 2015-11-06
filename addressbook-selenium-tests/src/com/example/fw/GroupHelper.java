@@ -20,9 +20,9 @@ public class GroupHelper extends HelperBase {
 
 	public void fillGroupForm(GroupData Group) {
 		
-	   type(By.name("group_name"), Group.groupname);
-	   type(By.name("group_header"), Group.header);
-	   type(By.name("group_footer"), Group.footer);
+	   type(By.name("group_name"), Group.getGroupname());
+	   type(By.name("group_header"), Group.getHeader());
+	   type(By.name("group_footer"), Group.getFooter());
 	   
 	}
 
@@ -67,10 +67,9 @@ public class GroupHelper extends HelperBase {
 		List<GroupData>groups= new ArrayList<GroupData>();
 		List<WebElement>checkboxes=driver.findElements(By.name("selected[]"));
 		for (WebElement checkbox:checkboxes) {
-			GroupData group = new GroupData();
 			String title =checkbox.getAttribute("title");
-	        group.groupname=title.substring("Select (".length(), title.length()-")".length());
-		   groups.add(group);
+	        String groupname =title.substring("Select (".length(), title.length()-")".length());
+	        groups.add(new GroupData().withGroupName(groupname));
 		   }
 		return groups;
 		

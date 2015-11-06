@@ -1,20 +1,20 @@
 package com.example.tests;
 
 public class ContactData implements Comparable<ContactData>{
-	public String firstName;
-	public String lastName;
-	public String address;
-	public String home;
-	public String mobile;
-	public String work;
-	public String email;
-	public String secodaryemail;
-	public String bdday;
-	public String bdmonth;
-	public String bdyear;
-	public String groupName;
-	public String secondaryAddress;
-	public String secondaryHome;
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String home;
+	private String mobile;
+	private String work;
+	private String email;
+	private String secodaryemail;
+	private String bdday;
+	private String bdmonth;
+	private String bdyear;
+	private String groupName;
+	private String secondaryAddress;
+	private String secondaryHome;
 	
 	public ContactData (){}
 
@@ -84,5 +84,126 @@ public class ContactData implements Comparable<ContactData>{
 		  return res;
 		}
 		return firstName.toLowerCase().compareTo(other.firstName.toLowerCase());
-		}	
+		}
+
+	public ContactData withFirstName(String firstName) {
+		this.firstName =firstName;
+		return this;
+	
+	}
+
+	public ContactData withLastName(String generateRandomString) {
+		this.lastName =lastName;
+		return null;
+	}
+
+	public ContactData withAddress(String generateRandomString) {
+		this.address =address;
+		return null;
+	}
+	public ContactData withHome(String generateRandomString) {
+		this.home =home;
+		return null;
+	}
+	public ContactData withMobile(String generateRandomString) {
+		this.mobile =mobile;
+		return null;
+	}
+	public ContactData withWork(String generateRandomString) {
+		this.work =work;
+		return null;
+	}
+	public ContactData witheMail(String generateRandomString) {
+		this.email =email;
+		return null;
+	}
+	public ContactData withSecodaryemail(String generateRandomString) {
+		this.secodaryemail =secodaryemail;
+		return null;
+	}
+	
+	public ContactData withBdDay(String generateRandomString) {
+		this.bdday =bdday;
+		return null;
+	}
+	
+	public ContactData withBdMonth(String generateRandomString) {
+		this.bdmonth =bdmonth;
+		return null;
+	}
+	public ContactData withBdYear(String generateRandomString) {
+		this.bdyear =bdyear;
+		return null;
+	}
+	public ContactData withGroupName(String generateRandomString) {
+		this.groupName =groupName;
+		return null;
+	}
+	public ContactData withSecondaryAddress (String generateRandomString) {
+		this.secondaryAddress =secondaryAddress;
+		return null;
+	}
+	public ContactData withSecondaryHome(String generateRandomString) {
+		this.secondaryHome =secondaryHome;
+		return null;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public String getHome() {
+		return home;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public String getWork() {
+		return work;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getSecodaryemail() {
+		return secodaryemail;
+	}
+
+	public String getBdday() {
+		return bdday;
+	}
+
+	public String getBdmonth() {
+		return bdmonth;
+	}
+
+	public String getBdyear() {
+		return bdyear;
+	}
+
+	public String getGroupName() {
+		return groupName;
+	}
+
+	public String getSecondaryAddress() {
+		return secondaryAddress;
+	}
+
+	public String getSecondaryHome() {
+		return secondaryHome;
+	}
+	
+	
 }
+	
