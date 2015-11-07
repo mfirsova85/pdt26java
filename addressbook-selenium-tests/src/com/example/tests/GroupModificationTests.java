@@ -10,8 +10,8 @@ public class GroupModificationTests extends TestBase{
 
 	@Test (dataProvider ="randomValidGroupsGenerator")
 	  public void modifySomeGroups (GroupData group)throws Exception {
-		  app.getNavigationHelper().openMainPage();
-	      app.getGroupHelper().gotoGroupsPage();
+		  app.navigateTo().mainPage();
+	      app.navigateTo().groupPage();
 	      
 	    //save old state
 	      List<GroupData> oldlist=app.getGroupHelper().getGroups();
@@ -20,10 +20,8 @@ public class GroupModificationTests extends TestBase{
 	      Random rnd =new Random ();
 	      int index =rnd.nextInt(oldlist.size()-1);
 	      //actions
-	      app.getGroupHelper().initGroupModification(index);
-		  app.getGroupHelper().fillGroupForm(group);
-	      app.getGroupHelper().submitGroupModification();
-	      app.getGroupHelper().gotoGroupsPage();
+	      app.getGroupHelper().modifyGroup(index, group);
+	      
 	      
 	    //save new list
 	      

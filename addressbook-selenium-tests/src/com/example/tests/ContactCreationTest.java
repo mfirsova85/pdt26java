@@ -17,16 +17,17 @@ public class ContactCreationTest extends TestBase {
 			
 			@Test (dataProvider ="randomValidContactgenerator")
 
-  public void ContactCreationwithValidData(ContactData contact) throws Exception {
+  public void ContactCreationwithValidData(ContactData contact) throws Exception 
+  {
 	  
-	 app.getNavigationHelper().openMainPage();
+	 app.navigateTo().mainPage();
 	  //save old list
 	  List<ContactData> oldlist=app.getContactHelper().getContacts();
 	  //actions
 	 app.getContactHelper().initNewContactCreation();
      app.getContactHelper().fillContactForm(contact);
      app.getContactHelper().submitContact();
-     app.getNavigationHelper().returnToHomePage();
+     app.navigateTo().returnToHomePage();
      
      //save new list
      List<ContactData> newlist=app.getContactHelper().getContacts();
@@ -40,11 +41,11 @@ public class ContactCreationTest extends TestBase {
   
   //@Test
   public void testEmptyContactCreation() throws Exception {
-	  app.getNavigationHelper().openMainPage();
+	  app.navigateTo().mainPage();
       app.getContactHelper().initNewContactCreation();
       app.getContactHelper().fillContactForm(new ContactData("", "", "", "", "", "", "", "", "-", "-", "", "[none]", "", ""));
       app.getContactHelper().submitContact();
-      app.getNavigationHelper().returnToHomePage();
+      app.navigateTo().returnToHomePage();
   }
 
 

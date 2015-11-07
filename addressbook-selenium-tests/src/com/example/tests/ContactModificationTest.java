@@ -11,7 +11,7 @@ public class ContactModificationTest extends TestBase{
 	
 		@Test (dataProvider ="randomValidContactgeneratorWithoutGroupName")
 		  public void modifySomeContact (ContactData contact) throws Exception {
-			 app.getNavigationHelper().openMainPage();
+			 app.navigateTo().mainPage();
 			 //save old list
 			 List<ContactData> oldlist=app.getContactHelper().getContacts();
 			 
@@ -21,7 +21,7 @@ public class ContactModificationTest extends TestBase{
 			      app.getContactHelper().initContactModification(index);
 			      app.getContactHelper().fillContactForm(contact);
 		          app.getContactHelper().submitContactModification();
-		          app.getNavigationHelper().openMainPage();
+		          app.navigateTo().mainPage();
 		          
 		      //save new list
 		      List<ContactData> newlist=app.getContactHelper().getContacts();

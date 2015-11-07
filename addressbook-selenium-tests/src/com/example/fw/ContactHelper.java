@@ -16,7 +16,7 @@ public class ContactHelper extends HelperBase {
 		
 	}
 	public void initNewContactCreation() {
-		
+	 
 	   click(By.linkText("add new"));
 	}
 
@@ -61,7 +61,7 @@ public class ContactHelper extends HelperBase {
 	}
 
 	public List<ContactData> getContacts() {
-        List<ContactData> contacts = new ArrayList<ContactData>();
+		List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> contactsrows = driver.findElements(By.name("entry"));
         for ( int contactsrowi = 0 ; contactsrowi < contactsrows.size() ; contactsrowi++ ){
               WebElement contactsrow = contactsrows.get(contactsrowi);

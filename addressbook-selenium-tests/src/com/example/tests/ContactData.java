@@ -84,7 +84,11 @@ public class ContactData implements Comparable<ContactData>{
 		  return res;
 		}
 		return firstName.toLowerCase().compareTo(other.firstName.toLowerCase());
-		}
+		}	
+
+	
+	
+	
 
 	public ContactData withFirstName(String firstName) {
 		this.firstName =firstName;
@@ -92,60 +96,60 @@ public class ContactData implements Comparable<ContactData>{
 	
 	}
 
-	public ContactData withLastName(String generateRandomString) {
+	public ContactData withLastName(String lastName) {
 		this.lastName =lastName;
-		return null;
+		return this;
 	}
 
-	public ContactData withAddress(String generateRandomString) {
+	public ContactData withAddress(String address) {
 		this.address =address;
-		return null;
+		return this;
 	}
-	public ContactData withHome(String generateRandomString) {
+	public ContactData withHome(String home) {
 		this.home =home;
-		return null;
+		return this;
 	}
-	public ContactData withMobile(String generateRandomString) {
+	public ContactData withMobile(String mobile) {
 		this.mobile =mobile;
-		return null;
+		return this;
 	}
-	public ContactData withWork(String generateRandomString) {
+	public ContactData withWork(String work) {
 		this.work =work;
-		return null;
+		return this;
 	}
-	public ContactData witheMail(String generateRandomString) {
+	public ContactData witheMail(String email) {
 		this.email =email;
-		return null;
+		return this;
 	}
-	public ContactData withSecodaryemail(String generateRandomString) {
+	public ContactData withSecodaryemail(String secodaryemail) {
 		this.secodaryemail =secodaryemail;
-		return null;
+		return this;
 	}
 	
-	public ContactData withBdDay(String generateRandomString) {
+	public ContactData withBdDay(String bdday) {
 		this.bdday =bdday;
-		return null;
+		return this;
 	}
 	
-	public ContactData withBdMonth(String generateRandomString) {
+	public ContactData withBdMonth(String bdmonth) {
 		this.bdmonth =bdmonth;
-		return null;
+		return this;
 	}
-	public ContactData withBdYear(String generateRandomString) {
+	public ContactData withBdYear(String bdyear) {
 		this.bdyear =bdyear;
-		return null;
+		return this;
 	}
-	public ContactData withGroupName(String generateRandomString) {
+	public ContactData withGroupName(String groupName) {
 		this.groupName =groupName;
-		return null;
+		return this;
 	}
-	public ContactData withSecondaryAddress (String generateRandomString) {
+	public ContactData withSecondaryAddress (String secondaryAddress) {
 		this.secondaryAddress =secondaryAddress;
-		return null;
+		return this;
 	}
-	public ContactData withSecondaryHome(String generateRandomString) {
+	public ContactData withSecondaryHome(String secondaryHome) {
 		this.secondaryHome =secondaryHome;
-		return null;
+		return this;
 	}
 
 	public String getFirstName() {

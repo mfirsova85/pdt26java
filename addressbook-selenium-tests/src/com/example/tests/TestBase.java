@@ -28,6 +28,20 @@ public class TestBase {
 	   
 	  }
 	
+	public static String generateRandomString(int length) {
+		   final char[] KEYCHARS = "0123456789ABCDEFGhijklmnopqrstuvwxyz±$!@#%&*()".toCharArray();
+			  Random randomizer = new Random();
+			  char[] randomString = new char[length];
+		Random rnd=new Random ();
+		if (rnd.nextInt(3)==0) {return "";}
+		else {
+			  for (int i = 0; i < length; i++) {
+		       randomString[i] = KEYCHARS[randomizer.nextInt(KEYCHARS.length)];
+		   }
+		  return new String(randomString);
+			}}
+	
+	
 	@DataProvider
 	public Iterator <Object[]> randomValidGroupsGenerator() {
 	    	
@@ -46,24 +60,7 @@ public class TestBase {
 	    	return list.iterator();
 	    }
 	
-	  
-
 	
-
-	
-
-	public static String generateRandomString(int length) {
-	   final char[] KEYCHARS = "0123456789ABCDEFGhijklmnopqrstuvwxyz±$!@#%&*()".toCharArray();
-		  Random randomizer = new Random();
-		  char[] randomString = new char[length];
-	Random rnd=new Random ();
-	if (rnd.nextInt(3)==0) {return "";}
-	else {
-		  for (int i = 0; i < length; i++) {
-	       randomString[i] = KEYCHARS[randomizer.nextInt(KEYCHARS.length)];
-	   }
-	  return new String(randomString);
-		}}
 	 
 		@DataProvider
 		public Iterator<Object[]> randomValidContactgeneratorWithoutGroupName() {
