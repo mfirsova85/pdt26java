@@ -2,6 +2,7 @@ package com.example.tests;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -9,6 +10,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.example.fw.GroupHelper;
+import com.example.utils.SortedListOf;
+
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.Matchers.*;
 public class GroupCreationTest extends TestBase{
 	
   @Test (dataProvider ="randomValidGroupsGenerator")
@@ -17,19 +22,17 @@ public class GroupCreationTest extends TestBase{
 	  app.navigateTo().groupPage();  
 	  
       //save old state
-      List<GroupData> oldlist=app.getGroupHelper().getGroups();
+      SortedListOf<GroupData> oldlist=app.getGroupHelper().getGroups();
       
       //actions
       app.getGroupHelper().createGroup(group);
        //save new list
       
-      List<GroupData> newlist=app.getGroupHelper().getGroups();
+      SortedListOf<GroupData> newlist=app.getGroupHelper().getGroups();
       
       //compare old and new list
 
-      oldlist.add (group);
-      Collections.sort(oldlist);
-      AssertJUnit.assertEquals(newlist, oldlist);
+      assertThat(newlist,equalTo(oldlist.withAdded(group)));
       
   }
   

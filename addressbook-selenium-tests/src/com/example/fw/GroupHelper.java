@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 
 import com.example.tests.GroupData;
 import com.example.tests.TestBase;
+import com.example.utils.SortedListOf;
 
 public class GroupHelper extends HelperBase {
 
@@ -17,17 +18,26 @@ public class GroupHelper extends HelperBase {
 		super(manager);
 		
 	}
+	private SortedListOf <GroupData> cachedGroups;
 	
-	public List<GroupData> getGroups() {
-		List<GroupData>groups= new ArrayList<GroupData>();
+	
+	public SortedListOf<GroupData> getGroups() {
+		if (cachedGroups==null) {
+			rebuildCache();
+		}
+		return cachedGroups;
+	}
+		private void rebuildCache() {
+		
+		cachedGroups= new SortedListOf<GroupData>();
 		manager.navigateTo().groupPage();
 		List<WebElement>checkboxes=driver.findElements(By.name("selected[]"));
 		for (WebElement checkbox:checkboxes) {
 			String title =checkbox.getAttribute("title");
 	        String groupname =title.substring("Select (".length(), title.length()-")".length());
-	        groups.add(new GroupData().withGroupName(groupname));
+	        cachedGroups.add(new GroupData().withGroupName(groupname));
 		   }
-		return groups;
+		
 	}
 	
 	
@@ -36,7 +46,8 @@ public class GroupHelper extends HelperBase {
 		initNewGroupCreation();
 	    fillGroupForm(group);
         submitGroupForm();
-        returnToGroupPage();	
+        returnToGroupPage();
+        rebuildCache();
         return this;
 		
 	}
@@ -46,6 +57,7 @@ public class GroupHelper extends HelperBase {
 		   fillGroupForm(group);
 	       submitGroupModification();
 	       returnToGroupPage();	
+	       rebuildCache();
 	       return this;
 	}
 	
@@ -53,6 +65,7 @@ public class GroupHelper extends HelperBase {
 	    selectGroup(index);
 		submitGroupRemoval();
 		returnToGroupPage();
+		rebuildCache();
 		return this;
 	}
 
@@ -62,6 +75,8 @@ public class GroupHelper extends HelperBase {
 //----------------------------------------------------------
 	private void submitGroupRemoval() {
 		click(By.name("delete"));
+		cachedGroups=null;
+	
 	}
 	
 	public GroupHelper fillGroupForm(GroupData Group) {
@@ -90,6 +105,7 @@ public class GroupHelper extends HelperBase {
     public GroupHelper submitGroupForm() {
 		
 	   click(By.name("submit"));
+	   cachedGroups=null;
 	   return this;
 	}
 
@@ -110,6 +126,7 @@ public class GroupHelper extends HelperBase {
 		// TODO Auto-generated method stub
 
 		click(By.name("update"));
+		cachedGroups=null;
 		return this;
 	}
 

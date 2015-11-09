@@ -28,9 +28,10 @@ public class ContactRemovalTest extends TestBase{
 		      
 		      //compare lists
 		      
-		 oldlist.remove (index);
-		 Collections.sort(oldlist);
-		 Assert.assertEquals(newlist, oldlist);
+	
+		      oldlist.remove (index);
+				 Collections.sort(oldlist);
+				 Assert.assertEquals(newlist, oldlist);
 		
 		}
 

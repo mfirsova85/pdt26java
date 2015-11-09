@@ -6,6 +6,10 @@ import java.util.Random;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.example.utils.SortedListOf;
+
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.Matchers.*;
 public class GroupModificationTests extends TestBase{
 
 	@Test (dataProvider ="randomValidGroupsGenerator")
@@ -14,7 +18,7 @@ public class GroupModificationTests extends TestBase{
 	      app.navigateTo().groupPage();
 	      
 	    //save old state
-	      List<GroupData> oldlist=app.getGroupHelper().getGroups();
+	      SortedListOf<GroupData> oldlist=app.getGroupHelper().getGroups();
 	      
 	      
 	      Random rnd =new Random ();
@@ -25,14 +29,11 @@ public class GroupModificationTests extends TestBase{
 	      
 	    //save new list
 	      
-	      List<GroupData> newlist=app.getGroupHelper().getGroups();
+	      SortedListOf<GroupData> newlist=app.getGroupHelper().getGroups();
 	      
 	      //compare old and new list
+	      assertThat(newlist,equalTo(oldlist.without(index).withAdded(group)));
 	      
-	      oldlist.remove(index);
-	      oldlist.add(group);
-	      Collections.sort(oldlist);
-	      Assert.assertEquals(newlist, oldlist);
 	      
 	}
 	
