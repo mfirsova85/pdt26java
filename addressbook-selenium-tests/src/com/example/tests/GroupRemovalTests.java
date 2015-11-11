@@ -15,8 +15,7 @@ public class GroupRemovalTests extends TestBase  {
 	
 	@Test
 	  public void deleteSomeGroup() {
-		app.navigateTo().mainPage();
-		app.navigateTo().groupPage();
+		
 		//save old state
 	     SortedListOf<GroupData> oldlist=app.getGroupHelper().getGroups();
 	      Random rnd =new Random ();

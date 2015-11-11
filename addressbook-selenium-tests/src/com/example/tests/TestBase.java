@@ -60,61 +60,33 @@ public class TestBase {
 	    	return list.iterator();
 	    }
 	
-	
-	 
-		@DataProvider
-		public Iterator<Object[]> randomValidContactgeneratorWithoutGroupName() {
-			List<Object[]> list =new ArrayList<Object[]>();
-			Random rnd =new Random();
-			for (int i =0;i<5;i++) {
-				ContactData contact =new ContactData()
-				.withFirstName (generateRandomString(10))
-				.withLastName (generateRandomString(10))
-				.withAddress (generateRandomString(10))
-				.withHome (generateRandomString(10))
-				.withMobile (generateRandomString(10))
-				.withWork (generateRandomString(10))
-				.witheMail (generateRandomString(10))
-				.withSecodaryemail (generateRandomString(10))
-				.withBdDay ("10")
-				.withBdMonth ("May")
-				.withBdYear ("1985")
-				.withSecondaryAddress(generateRandomString(10))
-				.withSecondaryHome (generateRandomString(10));
-				
-				list.add(new Object[]{contact});	
-				}
 
-				return list.iterator();
+	@DataProvider
+	public Iterator<Object[]> randomValidContactgenerator() {
+		List<Object[]> list =new ArrayList<Object[]>();
+		Random rnd =new Random();
+		for (int i =0;i<5;i++) {
+			ContactData contact =new ContactData()
+			.withFirstName (generateRandomString(10))
+			.withLastName (generateRandomString(10))
+			.withAddress (generateRandomString(10))
+			.withHome (generateRandomString(10))
+		    .withMobile (generateRandomString(10))
+			.withWork (generateRandomString(10))
+			.withEmail (generateRandomString(10))
+			.withSecodaryemail(generateRandomString(10))
+			.withBdday("10")
+			.withBdmonth("May")
+			.withBdyear("1985")
+			.withGroupName("Rob")
+			.withSecondaryAddress(generateRandomString(10))
+			.withSecondaryHome(generateRandomString(10));
+			list.add(new Object[]{contact});	
 			}
-		
-		@DataProvider
-		public Iterator<Object[]> randomValidContactgenerator() {
-			List<Object[]> list =new ArrayList<Object[]>();
-			Random rnd =new Random();
-			for (int i =0;i<5;i++) {
-				ContactData contact =new ContactData()
-				.withFirstName (generateRandomString(10))
-				.withLastName (generateRandomString(10))
-				.withAddress (generateRandomString(10))
-				.withHome (generateRandomString(10))
-				.withMobile (generateRandomString(10))
-				.withWork (generateRandomString(10))
-				.witheMail (generateRandomString(10))
-				.withSecodaryemail (generateRandomString(10))
-				.withBdDay ("10")
-				.withBdMonth ("May")
-				.withBdYear ("1985")
-				.withGroupName ("Rob")
-				.withSecondaryAddress(generateRandomString(10))
-				.withSecondaryHome (generateRandomString(10));
-				
-				list.add(new Object[]{contact});
-				
-				}
 
-				return list.iterator();
-			}
+			return list.iterator();
+		}
+
 	    
 		 // public String generateRandomString () {
 		 //	Random rnd= new Random();

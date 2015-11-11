@@ -1,48 +1,40 @@
 package com.example.tests;
 import java.util.Collections;
+
+import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.assertThat;
+
 import java.util.List;
 import java.util.Random;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.example.fw.ContactHelper;
+import com.example.utils.SortedListOf;
+
+import static com.example.fw.ContactHelper.MODIFICATION;
 
 public class ContactModificationTest extends TestBase{
 	
 		@Test (dataProvider ="randomValidContactgeneratorWithoutGroupName")
 		  public void modifySomeContact (ContactData contact) throws Exception {
-			 app.navigateTo().mainPage();
+			app.navigateTo().mainPage();
 			 //save old list
-			 List<ContactData> oldlist=app.getContactHelper().getContacts();
+			SortedListOf<ContactData> oldlist=app.getContactHelper().getContacts();
 			 
 			 //actions
 			    Random rnd =new Random ();
 			    int index =rnd.nextInt(oldlist.size()-1);
-			      app.getContactHelper().initContactModification(index);
-			      app.getContactHelper().fillContactForm(contact);
-		          app.getContactHelper().submitContactModification();
-		          app.navigateTo().mainPage();
+			    app.getContactHelper().ModifyContact(index,contact);
+			      
 		          
 		      //save new list
-		      List<ContactData> newlist=app.getContactHelper().getContacts();
+		      SortedListOf<ContactData> newlist=app.getContactHelper().getContacts();
 		      
 		      //compare lists
-		     oldlist.remove (index);
-		     oldlist.add (contact);
-		     Collections.sort(oldlist);
-		     Assert.assertEquals(newlist, oldlist);
-		}
+		      assertThat(newlist,equalTo(oldlist.without(index).withAdded(contact)));
 
 		
 }
-
-
-
-
-
-
- 
- 
-
-  
- 
+}
