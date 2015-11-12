@@ -28,11 +28,13 @@ public class ListOf<T> extends ForwardingList<T> {
     newItems.list.add(item);
     return newItems;
   }
+  
+  
 
-  public ListOf<T> without(T item) {
+  public ListOf<T> without(int index) {
     ListOf<T> newItems = new ListOf<T>();
     newItems.list = Lists.newArrayList(this.list);
-    newItems.list.remove(item);
+    newItems.list.remove(index);
     return newItems;
   }
 
