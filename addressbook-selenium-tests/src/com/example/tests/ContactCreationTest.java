@@ -20,6 +20,7 @@ public class ContactCreationTest extends TestBase {
 	  ListOf<ContactData> newlist=app.getContactHelper().getContacts();
      
      //compare lists
+	  
 	    oldlist.add(contact);
 		Collections.sort(oldlist);
 		Collections.sort(newlist);

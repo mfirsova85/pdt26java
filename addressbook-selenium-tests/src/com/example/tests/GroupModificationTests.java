@@ -1,15 +1,12 @@
 package com.example.tests;
-import java.util.Collections;
-import java.util.List;
+import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertThat;
+
 import java.util.Random;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.example.utils.SortedListOf;
-
-import static org.junit.Assert.assertThat;
-import static org.hamcrest.Matchers.*;
 public class GroupModificationTests extends TestBase{
 
 	@Test (dataProvider ="randomValidGroupsGenerator")

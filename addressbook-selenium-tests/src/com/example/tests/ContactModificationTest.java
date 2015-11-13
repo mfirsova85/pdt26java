@@ -2,6 +2,7 @@ package com.example.tests;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 
+import java.util.Collections;
 import java.util.Random;
 
 import org.testng.annotations.Test;
@@ -23,11 +24,14 @@ public class ContactModificationTest extends TestBase{
 			      
 		          
 		      //save new list
-		        ListOf<ContactData> newlist=app.getContactHelper().getContacts();
+		       ListOf<ContactData> newlist=app.getContactHelper().getContacts();
 		      
 		      //compare lists
-		      assertThat(newlist,equalTo(oldlist.without(index).withAppended(contact)));
-
+		       oldlist.remove (index);
+			   oldlist.add (contact);
+			   Collections.sort(oldlist);
+			   Collections.sort(newlist);
+			   assertThat(oldlist, equalTo(newlist));
 		
 }
 }

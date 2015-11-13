@@ -1,18 +1,12 @@
 package com.example.fw;
 
-import static com.example.fw.ContactHelper.CREATION;
-import static com.example.fw.ContactHelper.MODIFICATION;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.example.tests.ContactData;
-import com.example.tests.GroupData;
 import com.example.utils.ListOf;
-import com.example.utils.SortedListOf;
 
 public class ContactHelper extends HelperBase {
     public static boolean CREATION=true;
@@ -112,7 +106,7 @@ public class ContactHelper extends HelperBase {
 	    selectByText(By.name("bmonth"),contact.getBdmonth());
 	  
 	    type(By.name("byear"),contact.getBdyear());
-	 if (formType == CREATION) {
+	    if (formType == CREATION) {
 			// selectByText(By.name("new_group"), contact.group);
 		} else {
 			if (driver.findElements(By.name("new_group")).size() != 0) {
@@ -120,7 +114,7 @@ public class ContactHelper extends HelperBase {
 			}
 		}
 
-	 selectByText(By.name("new_group"),contact.getGroupName());
+	
 	 type(By.name("address2"),contact.getSecondaryAddress());
 	 type(By.name("phone2"),contact.getSecondaryHome());
 	 return this;
