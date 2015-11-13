@@ -65,7 +65,29 @@ public class ContactData implements Comparable<ContactData>{
 		//		+ ((lastName == null) ? 0 : lastName.hashCode());
 		return result;
 	}
-
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ContactData other = (ContactData) obj;
+		if (getFirstName() == null) {
+			if (other.getFirstName() != null)
+				return false;
+		} else if (!getFirstName().equals(other.getFirstName()))
+			return false;
+		if (getLastName() == null) {
+			if (other.getLastName() != null)
+				return false;
+		} else if (!getLastName().equals(other.getLastName()))
+			return false;
+		return true;
+	}
+	
+	
 	public ContactData withFirstName(String firstName) {
 		this.firstName=firstName;
 		return this;

@@ -8352,3 +8352,196 @@ java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.j
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 49416 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-269951021/testng-customsuite.xml
 java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin org.testng.remote.RemoteTestNG -serport 49416 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-269951021/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:16:20.407
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Collections
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactCreationTest
+    void ContactCreationwithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:16:23.161
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64541 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-68264356/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 64541 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-68264356/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:22:25.383
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Collections
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactCreationTest
+    void ContactCreationwithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:22:25.602
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65095 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1862821882/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 65095 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1862821882/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:24:08.416
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Collections
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactCreationTest
+    void ContactCreationwithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:24:08.704
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49160 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-2144812177/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 49160 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-2144812177/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:26:55.011
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Collections
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactCreationTest
+    void ContactCreationwithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:26:55.172
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49493 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1030208294/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 49493 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1030208294/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:28:58.227
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactModificationTest
+    void modifySomeContact(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:28:58.742
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50404 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1393524242/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 50404 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1393524242/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:31:42.392
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactModificationTest
+    void modifySomeContact(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:31:42.735
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50843 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1466626010/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 50843 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1466626010/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:36:57.900
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Collections
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactRemovalTest
+    void deletesomecontact()
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:36:58.286
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51468 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--862325050/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 51468 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--862325050/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:40:44.567
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Collections
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactRemovalTest
+    void deletesomecontact()
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:40:44.803
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51898 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-869366808/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 51898 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-869366808/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:41:33.478
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Collections
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactRemovalTest
+    void deletesomecontact()
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:41:33.655
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52147 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1019688995/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 52147 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse--1019688995/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:42:04.451
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTest.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.ListOf
+  class ContactModificationTest
+    void modifySomeContact(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-11-13 10:42:04.703
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar /Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52391 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1817326801/testng-customsuite.xml
+java -ea -classpath /Users/marinka/Downloads/selenium-server-standalone-2.48.2.jar:/Users/marinka/Documents/pdt26java/addressbook-selenium-tests/bin:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/testng.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/jcommander.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/bsh-2.0b4.jar:/Users/marinka/Downloads/eclipse/plugins/org.testng.eclipse_6.9.7.201510070420/lib/snakeyaml.jar org.testng.remote.RemoteTestNG -serport 52391 -d /Users/marinka/Documents/pdt26java/addressbook-selenium-tests/test-output /var/folders/rn/2m9mrwz12v58jjxxw0kb4hzh0000gn/T/testng-eclipse-1817326801/testng-customsuite.xml

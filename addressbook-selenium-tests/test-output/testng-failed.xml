@@ -5,15 +5,11 @@
     <classes>
       <class name="com.example.tests.ContactModificationTest">
         <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="modifySomeContact" invocation-numbers="0 1 2 3 4"/>
         </methods>
       </class> <!-- com.example.tests.ContactModificationTest -->
-      <class name="com.example.tests.ContactCreationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.example.tests.ContactCreationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

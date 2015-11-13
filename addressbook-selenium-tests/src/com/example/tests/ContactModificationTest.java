@@ -10,7 +10,7 @@ import com.example.utils.ListOf;
 
 public class ContactModificationTest extends TestBase{
 	
-		@Test (dataProvider ="randomValidContactgeneratorWithoutGroupName")
+		@Test (dataProvider ="randomValidContactgenerator")
 		  public void modifySomeContact (ContactData contact) throws Exception {
 			app.navigateTo().mainPage();
 			 //save old list

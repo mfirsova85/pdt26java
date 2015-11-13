@@ -17,7 +17,7 @@ public class ContactRemovalTest extends TestBase{
 			
 			 app.navigateTo().mainPage();
 			//save old list
-			 ListOf<ContactData> oldlist=app.getContactHelper().getContacts();
+			  ListOf<ContactData> oldlist=app.getContactHelper().getContacts();
 				Random rnd =new Random ();
 			    int index =rnd.nextInt(oldlist.size()-1);
 			    
@@ -32,7 +32,7 @@ public class ContactRemovalTest extends TestBase{
 			    oldlist.remove(index);
 				Collections.sort(oldlist);
 				Collections.sort(newlist);
-			  assertThat(newlist,equalTo(oldlist.without(index)));
+			  assertThat(newlist,equalTo(oldlist));
 		
 		
 		}

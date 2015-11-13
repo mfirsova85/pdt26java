@@ -1,19 +1,11 @@
 package com.example.tests;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-
-import java.util.Collections;
-import java.util.List;
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-import com.example.fw.GroupHelper;
-import com.example.utils.SortedListOf;
-
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
-import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+import com.example.utils.SortedListOf;
 public class GroupCreationTest extends TestBase{
 	
   @Test (dataProvider ="randomValidGroupsGenerator")
