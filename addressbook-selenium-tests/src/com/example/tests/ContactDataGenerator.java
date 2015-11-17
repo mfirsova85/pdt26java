@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.thoughtworks.xstream.XStream;
+
 public class ContactDataGenerator {
 
 	public static void main(String[] args) throws IOException {
@@ -35,12 +37,26 @@ public class ContactDataGenerator {
 		}
 
 }
+//-------------
+	private static void saveContactsToXmlFile(List<ContactData> contacts, File file)  throws IOException {
+		XStream xstream = new XStream();
+		xstream.alias("contact", ContactData.class);
+		String xml = xstream.toXML(contacts);
+		FileWriter writer = new FileWriter(file);
+		writer.write(xml);
+		writer.close();
 
-	private static void saveContactsToXmlFile(List<ContactData> contacts, File file) {
-		// TODO Auto-generated method stub
-		
 	}
 
+public static List<ContactData> loadContactsFromXmlFile(File file) throws IOException{
+	XStream xstream = new XStream();
+	xstream.alias("contact", ContactData.class);
+
+	return (List<ContactData>) xstream.fromXML(file);
+
+}
+//-------------------CSV FILE----------------------	
+	
 	public static void saveContactsToCsvFile(List<ContactData> contacts, File file) throws IOException {
 		FileWriter writer = new FileWriter (file);
 		for (ContactData contact : contacts) {
@@ -56,6 +72,8 @@ public class ContactDataGenerator {
 		writer.close();
 
 	}
+	
+
 	
 	public static List<ContactData> LoadContactsFromCSVFile(File file) throws IOException {
 		List<ContactData> list = new ArrayList<ContactData>();
@@ -106,6 +124,9 @@ public class ContactDataGenerator {
     	
     	return list;
     }
+	
+//-------------GENERATE RANDOM STRING-----------------
+	
 	
 	public static String generateRandomString(int length) {
 		   final char[] KEYCHARS = "0123456789ABCDEFGhijklmnopqrstuvwxyz±$!@#%&*()".toCharArray();

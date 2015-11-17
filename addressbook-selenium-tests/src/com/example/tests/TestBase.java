@@ -1,5 +1,10 @@
 package com.example.tests;
 
+import org.junit.BeforeClass;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -15,8 +20,9 @@ public class TestBase {
 	
 	protected ApplicationManager app;
 
-	
-	@BeforeTest
+//@BeforeMethod
+ //   @BeforeClass
+	 @BeforeTest 
 	public void setUp() throws Exception {
 		String configFile = System.getProperty("configFile", "application.properties");
 		Properties properties = new Properties();
@@ -27,6 +33,8 @@ public class TestBase {
 	  } 
 
 
+	//@AfterMethod
+	//@AfterClass
 	@AfterTest
 	public void tearDown() throws Exception {
 		app.stop ();
@@ -50,7 +58,7 @@ public class TestBase {
 		return list;
 	}
 
-	    
+   
 		 // public String generateRandomString () {
 		 //	Random rnd= new Random();
 		 // 	if (rnd.nextInt(3)==0) {
