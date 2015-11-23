@@ -4,6 +4,22 @@
     <header>62@xuhr*Bq</header>
     <footer>62@xuhr*Bq</footer>
   </group>
+  <group>
+    <groupname></groupname>
+    <header></header>
+    <footer></footer>
+  </group>
+   <group>
+    <groupname>test</groupname>
+    <header>
+    test
+    test
+    test</header>
+    <footer>
+    test
+    test
+    test</footer>
+  </group>
   
   </list>
   

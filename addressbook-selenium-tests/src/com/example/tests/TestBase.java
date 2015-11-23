@@ -18,10 +18,8 @@ import com.example.fw.ApplicationManager;
 
 public class TestBase {
 	
-	protected ApplicationManager app;
+	static ApplicationManager app;
 
-//@BeforeMethod
- //   @BeforeClass
 	 @BeforeTest 
 	public void setUp() throws Exception {
 		String configFile = System.getProperty("configFile", "application.properties");
@@ -32,9 +30,6 @@ public class TestBase {
 	
 	  } 
 
-
-	//@AfterMethod
-	//@AfterClass
 	@AfterTest
 	public void tearDown() throws Exception {
 		app.stop ();
