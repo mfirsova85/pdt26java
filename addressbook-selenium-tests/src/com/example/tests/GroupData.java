@@ -77,5 +77,25 @@ public String getHeader() {
 public String getFooter() {
 	return footer;
 }
+
+public String getId() {
+	return id;
+}
+
+public void setGroupname(String groupname) {
+	this.groupname = groupname;
+}
+
+public void setHeader(String header) {
+	this.header = header;
+}
+
+public void setFooter(String footer) {
+	this.footer = footer;
+}
+
+public void setId(String id) {
+	this.id = id;
+}
 	
 }
