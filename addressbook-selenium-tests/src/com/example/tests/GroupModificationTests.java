@@ -15,7 +15,7 @@ public class GroupModificationTests extends TestBase{
 	      app.navigateTo().groupPage();
 	      
 	    //save old state
-	      SortedListOf<GroupData> oldlist=app.getGroupHelper().getGroups();
+	      SortedListOf<GroupData> oldlist=app.getGroupHelper().getUIGroups();
 	      
 	      
 	      Random rnd =new Random ();
@@ -26,7 +26,7 @@ public class GroupModificationTests extends TestBase{
 	      
 	    //save new list
 	      
-	      SortedListOf<GroupData> newlist=app.getGroupHelper().getGroups();
+	      SortedListOf<GroupData> newlist=app.getGroupHelper().getUIGroups();
 	      
 	      //compare old and new list
 	      assertThat(newlist,equalTo(oldlist.without(index).withAdded(group)));

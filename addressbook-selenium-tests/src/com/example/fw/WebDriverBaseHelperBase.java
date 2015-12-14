@@ -3,16 +3,19 @@ package com.example.fw;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class WebDriverBaseHelperBase extends HelperBase{
 
 	
-	public WebDriver driver;
+	protected WebDriver driver;
+	public boolean acceptNextAlert = true;
+	private WebDriverWait wait;
 	
 	public WebDriverBaseHelperBase (ApplicationManager manager) {
 		super(manager);
-		this.manager = manager;
 		this.driver = manager.getDriver();
+		wait = new WebDriverWait (driver, 10);
 	}
 
 	protected void type(By locator, String text){
