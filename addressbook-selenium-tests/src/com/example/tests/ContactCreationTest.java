@@ -46,6 +46,16 @@ public class ContactCreationTest extends TestBase {
 		Collections.sort(newList);
 
 		assertThat(oldList, equalTo(newList));
+		
+		if (wantToCheck ()){
+		     
+		      
+		      if ("yes".equals(app.getPropert("check.db"))){
+		      assertThat(app.getHibernateHelper().listContacts(),equalTo(app.getHibernateHelper().listContacts()));
+		      }
+		      if ("yes".equals(app.getPropert("check.UI")))
+		      assertThat(app.getHibernateHelper().listContacts(),equalTo(app.getContactHelper().getContactsUI()));
+		      }
 	}
 
 }

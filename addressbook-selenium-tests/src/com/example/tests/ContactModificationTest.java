@@ -15,7 +15,7 @@ public class ContactModificationTest extends TestBase{
 		  public void modifySomeContact (ContactData contact) throws Exception {
 			app.navigateTo().mainPage();
 			 //save old list
-			 ListOf<ContactData> oldlist=app.getContactHelper().getContacts();
+			 ListOf<ContactData> oldlist=app.getContactHelper().getContactsUI();
 			 
 			 //actions
 			    Random rnd =new Random ();
@@ -24,7 +24,7 @@ public class ContactModificationTest extends TestBase{
 			      
 		          
 		      //save new list
-		       ListOf<ContactData> newlist=app.getContactHelper().getContacts();
+		       ListOf<ContactData> newlist=app.getContactHelper().getContactsUI();
 		      
 		      //compare lists
 		       oldlist.remove (index);

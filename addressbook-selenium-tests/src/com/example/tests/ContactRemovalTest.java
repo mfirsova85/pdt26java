@@ -17,7 +17,7 @@ public class ContactRemovalTest extends TestBase{
 			
 			 app.navigateTo().mainPage();
 			//save old list
-			  ListOf<ContactData> oldlist=app.getContactHelper().getContacts();
+			  ListOf<ContactData> oldlist=app.getContactHelper().getContactsUI();
 				Random rnd =new Random ();
 			    int index =rnd.nextInt(oldlist.size()-1);
 			    
@@ -26,7 +26,7 @@ public class ContactRemovalTest extends TestBase{
 			  
 		      
 		      //save new list
-			 ListOf<ContactData> newlist=app.getContactHelper().getContacts();
+			 ListOf<ContactData> newlist=app.getContactHelper().getContactsUI();
 		      
 		      //compare lists
 			    oldlist.remove(index);

@@ -19,12 +19,13 @@ public class ContactHelper extends WebDriverBaseHelperBase {
 	}
 	private ListOf <ContactData> cachedContacts;
 	
-	public ListOf<ContactData> getContacts() {
+	public ListOf<ContactData> getContactsUI() {
 		if(cachedContacts==null) {
 			rebuildCache();
 		}
 		return cachedContacts;
 	}
+	
 	private void rebuildCache () {
 		cachedContacts= new ListOf<ContactData>();
 		manager.navigateTo().mainPage();
