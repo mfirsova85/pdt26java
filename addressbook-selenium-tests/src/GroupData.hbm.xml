@@ -7,5 +7,5 @@
  <property name="header" column="group_header" />
  <property name="footer" column="group_footer" />
  </class>
-</hibernate-mapping>
+</hibernate-mapping> 
 

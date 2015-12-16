@@ -3,6 +3,7 @@ package com.example.utils;
 import java.util.List;
 import java.util.Random;
 
+import com.example.tests.ContactData;
 import com.google.common.collect.ForwardingList;
 import com.google.common.collect.Lists;
 
@@ -13,9 +14,13 @@ public class ListOf<T> extends ForwardingList<T> {
   public ListOf() {
   }
 
-  public ListOf(ListOf<T> listToCopy) {
-    list = Lists.newArrayList(listToCopy);
+  public ListOf(List<ContactData> list2) {
+    list = (List<T>) Lists.newArrayList(list2);
   }
+  
+  public ListOf(ListOf<T> listToCopy) {
+	    list = Lists.newArrayList(listToCopy);
+	  }
 
   @Override
   protected List<T> delegate() {
